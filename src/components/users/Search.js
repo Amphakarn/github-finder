@@ -2,13 +2,9 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 
 const Search = ({ showClear, clearUsers, setAlert, searchUsers }) => {
-  // console.log('props in Search: ', props);
   const [text, setText] = useState('');
 
   const onChange = (e) => {
-    console.log('e: ', e);
-
-    console.log('e.target: ', e.target);
     setText(e.target.value);
   };
 
