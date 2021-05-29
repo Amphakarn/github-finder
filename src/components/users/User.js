@@ -48,13 +48,13 @@ export class User extends Component {
         {hireable ? (
           <i className="fas fa-check text-success"></i>
         ) : (
-          <i class="fas fa-times-circle text-danger"></i>
+          <i className="fas fa-times-circle text-danger"></i>
         )}
         <div className="card grid-2">
           <div className="all-center">
             <img
               src={avatar_url}
-              alt="avatar image"
+              alt="avatar"
               className="round-img"
               style={{ width: '150px' }}
             />
