@@ -54,7 +54,7 @@ class App extends Component {
       client_secret=${process.env.REACT_APP_GITHUB_CLIENT_SECRET}`
     );
 
-    this.setState({ repos: res.data, user: res.data, loading: false });
+    this.setState({ repos: res.data, loading: false });
   };
 
   // Clear users from state
