@@ -1,8 +1,7 @@
 import {
   SEARCH_USERS,
-  GET_USER,
+  GET_USER_AND_REPOS,
   CLEAR_USERS,
-  GET_REPOS,
   SET_LOADING,
 } from '../types';
 
@@ -15,10 +14,11 @@ const githubReducer = (state, action) => {
         loading: false,
       };
 
-    case GET_USER:
+    case GET_USER_AND_REPOS:
       return {
         ...state,
-        user: action.payload,
+        user: action.payload.user,
+        repos: action.payload.repos,
         loading: false,
       };
 
@@ -29,13 +29,6 @@ const githubReducer = (state, action) => {
         loading: false,
       };
 
-    case GET_REPOS:
-      return {
-        ...state,
-        repos: action.payload,
-        loading: false,
-      };
-
     case SET_LOADING:
       return {
         ...state,
@@ -43,7 +36,7 @@ const githubReducer = (state, action) => {
       };
 
     default:
-      return state;
+      throw Error(`Unhandled Action: ${action.type}`);
   }
 };
 
