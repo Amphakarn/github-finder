@@ -52,7 +52,7 @@ const GithubState = (props) => {
     setLoading();
 
     const res = await axios.get(
-      `http://api.github.com/users/${username}?
+      `https://api.github.com/users/${username}?
       client_id=${githubClientId}&
       client_secret=${githubClientSecret}`
     );
@@ -68,7 +68,7 @@ const GithubState = (props) => {
     setLoading();
 
     const res = await axios.get(
-      `http://api.github.com/users/${username}/repos?per_page=5&sort=created:asc&
+      `https://api.github.com/users/${username}/repos?per_page=5&sort=created:asc&
       client_id=${githubClientId}&
       client_secret=${githubClientSecret}`
     );
