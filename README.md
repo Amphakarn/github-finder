@@ -6,9 +6,21 @@ Visit Github Finder at https://githubfinder052021.netlify.app/
 
 ## Screenshots
 
-##### Main View
+#### Homepage
 
-!["Main View"]()
+!["Homepage"](https://github.com/Amphakarn/github-finder/blob/master/docs/Homepage.png?raw=true)
+
+#### Alert
+
+!["Homepage"](https://github.com/Amphakarn/github-finder/blob/master/docs/Alert.png?raw=true)
+
+#### Search Users
+
+!["Homepage"](https://github.com/Amphakarn/github-finder/blob/master/docs/SearchUsers.png?raw=true)
+
+#### Specific User Profile
+
+!["Homepage"](https://github.com/Amphakarn/github-finder/blob/master/docs/SpecificUser.png?raw=true)
 
 ## Dependencies
 
